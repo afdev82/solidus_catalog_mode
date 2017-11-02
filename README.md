@@ -1,7 +1,9 @@
 SolidusCatalogMode
 ==================
 
-Introduction goes here.
+This extension allow the user to set products not for online sale.  
+In this way we could use Solidus to show only the catalog of our products,
+without the online store functionality.
 
 Installation
 ------------
@@ -36,4 +38,4 @@ Simply add this require statement to your spec_helper:
 require 'solidus_catalog_mode/factories'
 ```
 
-Copyright (c) 2017 [name of extension creator], released under the New BSD License
+Copyright (c) 2017 Antonio Facciolo, released under the New BSD License
