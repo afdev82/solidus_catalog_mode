@@ -1,0 +1,8 @@
+<div data-hook="admin_product_form_catalog_mode">
+  <%= f.field_container :catalog_mode do %>
+    <%= f.label :catalog_mode do %>
+      <%= f.check_box :catalog_mode %> <%= Spree::Product.human_attribute_name(:catalog_mode) %>
+    <% end %>
+    <%= f.field_hint :catalog_mode %>
+  <% end %>
+</div>
