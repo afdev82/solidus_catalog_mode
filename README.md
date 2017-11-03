@@ -31,7 +31,7 @@ the price and the cart form in the product page.
 
 Dependencies
 -------
-If you want to be able to set the flag for the stores in the frontend, it requires the [solidus_multi_domain](https://github.com/solidusio/solidus_multi_domain) gem.
+If you want to be able to set the flag for the stores in the backend, it requires the [solidus_multi_domain](https://github.com/solidusio/solidus_multi_domain) gem.
 
 Testing
 -------
