@@ -21,6 +21,14 @@ bundle
 bundle exec rails g solidus_catalog_mode:install
 ```
 
+Usage
+-------
+
+This gem adds a boolean field to the products and to the stores.
+In this way you could set a single product or the complete store to be in "catalog mode".
+Then in your store frontend you can use this information to disable the link to the cart,
+the price and the cart form in the product page.
+
 Testing
 -------
 
