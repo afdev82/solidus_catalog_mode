@@ -3,3 +3,5 @@ en:
     hints:
       spree/product:
         catalog_mode: "This determines whether or not for this product the catalog mode is enabled (the online sale is disabled).<br/>Default: Not Checked"
+      spree/store:
+        catalog_mode: "This determines whether or not for this store the catalog mode is enabled (the online sale is disabled).<br/>Default: Not Checked"
