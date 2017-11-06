@@ -1,0 +1,9 @@
+de:
+  activerecord:
+    errors:
+      models:
+        spree/line_item:
+          attributes:
+            catalog_mode:
+              should_be_false: "sollte false sein"
+

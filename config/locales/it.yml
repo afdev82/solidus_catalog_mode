@@ -1,4 +1,11 @@
 it:
+  activerecord:
+    errors:
+      models:
+        spree/line_item:
+          attributes:
+            catalog_mode:
+              should_be_false: "deve essere false"
   spree:
     hints:
       spree/product:
