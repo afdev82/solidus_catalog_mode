@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 
   s.author    = 'Antonio Facciolo'
   s.email     = 'afdev82@gmail.com'
-  # s.homepage  = 'http://www.example.com'
+  s.homepage  = 'https://github.com/afdev82/solidus_catalog_mode'
 
   s.files = Dir["{app,config,db,lib}/**/*", 'LICENSE', 'Rakefile', 'README.md']
   s.test_files = Dir['test/**/*']
