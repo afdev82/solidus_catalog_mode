@@ -7,6 +7,7 @@ en:
             catalog_mode:
               should_be_false: "should be false"
   spree:
+    catalog_mode: Catalog mode
     hints:
       spree/product:
         catalog_mode: "This determines whether or not for this product the catalog mode is enabled (the online sale is disabled).<br/>Default: Not Checked"

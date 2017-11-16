@@ -6,4 +6,3 @@ de:
           attributes:
             catalog_mode:
               should_be_false: "sollte false sein"
-

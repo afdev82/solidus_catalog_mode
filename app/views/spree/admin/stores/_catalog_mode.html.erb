@@ -1,12 +1,11 @@
-<div data-hook="admin_store_form_catalog_mode">
-  <div class="row">
-    <div class="four columns">
-      <%= f.field_container :catalog_mode do %>
-        <%= f.label :catalog_mode do %>
-          <%= f.check_box :catalog_mode %> <%= Spree::Store.human_attribute_name(:catalog_mode) %>
-        <% end %>
-        <%= f.field_hint :catalog_mode %>
-      <% end %>
-    </div>
-  </div>
+<div data-hook="admin_store_form_catalog_mode" class="two columns">
+  <%= f.field_container :catalog_mode do %>
+    <%= f.label :catalog_mode, Spree.t(:catalog_mode) %>
+    <%= f.field_hint :catalog_mode %>
+    <ul>
+      <li><%= f.radio_button :catalog_mode, "true", :class => 'fullwidth' %> <%= Spree.t(:say_yes) %></li>
+      <li><%= f.radio_button :catalog_mode, "false", :class => 'fullwidth' %> <%= Spree.t(:say_no) %></li>
+    </ul>
+    <%= error_message_on :store, :catalog_mode %>
+  <% end %>
 </div>
