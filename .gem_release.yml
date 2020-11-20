@@ -1,0 +1,5 @@
+bump:
+  recurse: false
+  file: 'lib/solidus_catalog_mode/version.rb'
+  message: Bump SolidusCatalogMode to %{version}
+  tag: true

@@ -1,32 +1,36 @@
-# encoding: UTF-8
-$:.push File.expand_path('../lib', __FILE__)
-require 'solidus_catalog_mode/version'
+# frozen_string_literal: true
 
-Gem::Specification.new do |s|
-  s.name        = 'solidus_catalog_mode'
-  s.version     = SolidusCatalogMode::VERSION
-  s.summary     = 'Allow to set products to not for online sale'
-  s.description = 'Allow to set products only to show, but not for online sale (catalog mode)'
-  s.license     = 'BSD-3-Clause'
+require_relative 'lib/solidus_catalog_mode/version'
 
-  s.author    = 'Antonio Facciolo'
-  s.email     = 'afdev82@gmail.com'
-  s.homepage  = 'https://github.com/afdev82/solidus_catalog_mode'
+Gem::Specification.new do |spec|
+  spec.name = 'solidus_catalog_mode'
+  spec.version = SolidusCatalogMode::VERSION
+  spec.authors = ['Antonio Facciolo']
+  spec.email = 'afdev82@gmail.com'
 
-  s.files = Dir["{app,config,db,lib}/**/*", 'LICENSE', 'Rakefile', 'README.md']
-  s.test_files = Dir['test/**/*']
+  spec.summary = 'Allow to set products to not for online sale'
+  spec.description = 'Allow to set products only to show, but not for online sale (catalog mode)'
+  spec.homepage = 'https://github.com/afdev82/solidus_catalog_mode'
+  spec.license = 'BSD-3-Clause'
 
-  s.add_dependency 'solidus_core', '~> 2.3'
+  spec.metadata['homepage_uri'] = spec.homepage
+  spec.metadata['source_code_uri'] = 'https://github.com/afdev82/solidus_catalog_mode'
+  spec.metadata['changelog_uri'] = 'https://github.com/afdev82/solidus_catalog_mode/releases'
 
-  s.add_development_dependency 'capybara', '~> 0'
-  s.add_development_dependency 'poltergeist', '~> 0'
-  s.add_development_dependency 'coffee-rails', '~> 0'
-  s.add_development_dependency 'sass-rails', '~> 0'
-  s.add_development_dependency 'database_cleaner', '~> 0'
-  s.add_development_dependency 'factory_bot', '~> 0'
-  s.add_development_dependency 'rspec-rails', '~> 0'
-  s.add_development_dependency 'rubocop', '0.37.2'
-  s.add_development_dependency 'rubocop-rspec', '1.4.0'
-  s.add_development_dependency 'simplecov', '~> 0'
-  s.add_development_dependency 'sqlite3', '~> 0'
+  spec.required_ruby_version = Gem::Requirement.new('~> 2.5')
+
+  # Specify which files should be added to the gem when it is released.
+  # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
+  files = Dir.chdir(__dir__) { `git ls-files -z`.split("\x0") }
+
+  spec.files = files.grep_v(%r{^(test|spec|features)/})
+  spec.test_files = files.grep(%r{^(test|spec|features)/})
+  spec.bindir = "exe"
+  spec.executables = files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.require_paths = ["lib"]
+
+  spec.add_dependency 'solidus_core', ['>= 2.0.0', '< 3']
+  spec.add_dependency 'solidus_support', '~> 0.5'
+
+  spec.add_development_dependency 'solidus_dev_support', '~> 2.1'
 end
