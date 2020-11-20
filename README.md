@@ -1,7 +1,7 @@
 # Solidus Catalog Mode
 
-[![CircleCI](https://circleci.com/gh/afdev82/solidus_catalog_mode.svg?style=shield)](https://circleci.com/gh/REPO_ORG/solidus_catalog_mode)
-[![codecov](https://codecov.io/gh/afdev82/solidus_catalog_mode/branch/master/graph/badge.svg)](https://codecov.io/gh/REPO_ORG/solidus_catalog_mode)
+[![CircleCI](https://circleci.com/gh/afdev82/solidus_catalog_mode.svg?style=shield)](https://circleci.com/gh/afdev82/solidus_catalog_mode)
+[![codecov](https://codecov.io/gh/afdev82/solidus_catalog_mode/branch/master/graph/badge.svg)](https://codecov.io/gh/afdev82/solidus_catalog_mode)
 
 This gem adds a boolean field to the products and to the stores.
 In this way you could set a single product or the complete store to be in "catalog mode".
