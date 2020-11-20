@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Deface::Override.new(
   virtual_path: "spree/admin/stores/_form",
   name: "catalog_mode_admin_store_form",

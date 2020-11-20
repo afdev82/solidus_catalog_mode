@@ -11,8 +11,10 @@ module SolidusCatalogMode
       end
 
       def add_javascripts
-        append_file 'vendor/assets/javascripts/spree/frontend/all.js', "//= require spree/frontend/solidus_catalog_mode\n"
-        append_file 'vendor/assets/javascripts/spree/backend/all.js', "//= require spree/backend/solidus_catalog_mode\n"
+        append_file 'vendor/assets/javascripts/spree/frontend/all.js',
+          "//= require spree/frontend/solidus_catalog_mode\n"
+        append_file 'vendor/assets/javascripts/spree/backend/all.js',
+          "//= require spree/backend/solidus_catalog_mode\n"
       end
 
       def add_stylesheets
