@@ -1,5 +1,9 @@
 # Changelog
 
+## [v0.5.0](https://github.com/afdev82/solidus_catalog_mode/tree/v0.5.0) (2021-01-18)
+
+[Full Changelog](https://github.com/afdev82/solidus_catalog_mode/compare/v0.4.1...v0.5.0)
+
 ## [v0.4.1](https://github.com/afdev82/solidus_catalog_mode/tree/v0.4.1) (2020-11-20)
 
 [Full Changelog](https://github.com/afdev82/solidus_catalog_mode/compare/v0.4.0...v0.4.1)
