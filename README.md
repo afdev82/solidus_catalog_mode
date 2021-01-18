@@ -97,4 +97,4 @@ bundle exec gem release
 
 ## License
 
-Copyright (c) 2017 Antonio Facciolo, released under the New BSD License.
+Copyright (c) 2021 Antonio Facciolo, released under the New BSD License.
