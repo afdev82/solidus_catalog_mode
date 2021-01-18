@@ -5,8 +5,12 @@ it:
         spree/line_item:
           attributes:
             catalog_mode:
-              should_be_false: "deve essere false"
+              should_be_false: deve essere false
   spree:
+    admin:
+      stores:
+        form:
+          catalog_mode: Modalità catalogo
     hints:
       spree/product:
         catalog_mode: "Determina se per questo prodotto è abilitata la modalità catalogo (la vendita nello store online è disabilitata).<br/>Default: Non spuntato"

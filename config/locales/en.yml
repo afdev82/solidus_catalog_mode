@@ -5,12 +5,14 @@ en:
         spree/line_item:
           attributes:
             catalog_mode:
-              should_be_false: "should be false"
+              should_be_false: should be false
   spree:
-    catalog_mode: Catalog mode
+    admin:
+      stores:
+        form:
+          catalog_mode: Catalog mode
     hints:
       spree/product:
         catalog_mode: "This determines whether or not for this product the catalog mode is enabled (the online sale is disabled).<br/>Default: Not Checked"
       spree/store:
         catalog_mode: "This determines whether or not for this store the catalog mode is enabled (the online sale is disabled).<br/>Default: Not Checked"
-

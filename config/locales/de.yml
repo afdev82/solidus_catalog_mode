@@ -6,3 +6,13 @@ de:
           attributes:
             catalog_mode:
               should_be_false: "sollte false sein"
+  spree:
+    admin:
+      stores:
+        form:
+          catalog_mode: Katalogmodus
+    hints:
+      spree/product:
+        catalog_mode: "Hier wird festgelegt, ob für dieses Produkt der Katalogmodus aktiviert ist oder nicht (der Online-Verkauf ist deaktiviert).<br/>Standard: Nicht angekreuzt"
+      spree/store:
+        catalog_mode: "Hier wird festgelegt, ob für dieses Shop der Katalogmodus aktiviert ist oder nicht (der Online-Verkauf ist deaktiviert).<br/>Standard: Nicht angekreuzt"

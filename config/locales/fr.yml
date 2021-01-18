@@ -1,0 +1,18 @@
+fr:
+  activerecord:
+    errors:
+      models:
+        spree/line_item:
+          attributes:
+            catalog_mode:
+              should_be_false: devraient être fausses
+  spree:
+    admin:
+      stores:
+        form:
+          catalog_mode: Mode catalogue
+    hints:
+      spree/product:
+        catalog_mode: "Cela détermine si pour ce produit le mode catalogue est activé ou non (la vente en ligne est désactivée).<br/>Défaut : Non coché"
+      spree/store:
+        catalog_mode: "Cela détermine si pour ce magasin le mode catalogue est activé ou non (la vente en ligne est désactivée).<br/>Défaut : Non coché"

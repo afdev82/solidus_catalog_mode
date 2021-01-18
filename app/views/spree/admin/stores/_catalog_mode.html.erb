@@ -1,6 +1,6 @@
 <div data-hook="admin_store_form_catalog_mode" class="two columns">
   <%= f.field_container :catalog_mode do %>
-    <%= f.label :catalog_mode, Spree.t(:catalog_mode) %>
+    <%= f.label :catalog_mode, t('.catalog_mode') %>
     <%= f.field_hint :catalog_mode %>
     <ul>
       <li><%= f.radio_button :catalog_mode, "true", :class => 'fullwidth' %> <%= Spree.t(:say_yes) %></li>

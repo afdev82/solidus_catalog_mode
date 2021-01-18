@@ -1,0 +1,18 @@
+es:
+  activerecord:
+    errors:
+      models:
+        spree/line_item:
+          attributes:
+            catalog_mode:
+              should_be_false: debería ser falso
+  spree:
+    admin:
+      stores:
+        form:
+          catalog_mode: Modo catálogo
+    hints:
+      spree/product:
+        catalog_mode: "Esto determina si para este producto se activa o no el modo de catálogo (la venta en línea está desactivada).<br/>Predeterminado: No comprobado"
+      spree/store:
+        catalog_mode: "Esto determina si para esta tienda el modo catálogo está habilitado o no (la venta en línea está desactivada).<br/>Predeterminado: No comprobado"
