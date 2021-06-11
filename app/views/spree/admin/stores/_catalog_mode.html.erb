@@ -3,8 +3,8 @@
     <%= f.label :catalog_mode, t('.catalog_mode') %>
     <%= f.field_hint :catalog_mode %>
     <ul>
-      <li><%= f.radio_button :catalog_mode, "true", :class => 'fullwidth' %> <%= Spree.t(:say_yes) %></li>
-      <li><%= f.radio_button :catalog_mode, "false", :class => 'fullwidth' %> <%= Spree.t(:say_no) %></li>
+      <li><%= f.radio_button :catalog_mode, "true", :class => 'fullwidth' %> <%= I18n.t('spree.say_yes') %></li>
+      <li><%= f.radio_button :catalog_mode, "false", :class => 'fullwidth' %> <%= I18n.t('spree.say_no') %></li>
     </ul>
     <%= error_message_on :store, :catalog_mode %>
   <% end %>
